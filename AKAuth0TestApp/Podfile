@@ -1,0 +1,10 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios, '8.0'
+
+
+target 'AKAuth0TestApp' do
+    pod 'Lock', '~> 1.24'
+    pod 'SimpleKeychain'
+end
+
