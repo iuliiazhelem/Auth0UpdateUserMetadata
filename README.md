@@ -12,10 +12,10 @@ Please make sure that you change some keys in Info.plist with your data:
 <string>auth0</string>
 <key>CFBundleURLSchemes</key>
 <array>
-<string>a1038202126265858</string>
+<string>a01038202126265858</string>
 </array>
 
-a1038202126265858 -> a<Auth0ClientId>
+a01038202126265858 -> a0<Auth0ClientId>
 
 Please use your Auth0 APIv2 token from https://auth0.com/docs/api/management/v2/tokens
 with scope : update:users
