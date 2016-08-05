@@ -21,3 +21,8 @@ Please use your Auth0 APIv2 token from https://auth0.com/docs/api/management/v2/
 with scope : update:users
 
 static NSString *kAuth0APIv2Token = <Auth0 APIv2>
+
+
+For Swift example please change data in Auth0.plist:
+- ClientId (your Auth0ClientId)
+- Domain (your Auth0Domain)

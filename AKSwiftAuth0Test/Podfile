@@ -3,8 +3,9 @@ platform :ios, '9.0'
 use_frameworks!
 
 target 'AKSwiftAuth0Test' do
-    pod 'Lock', '~> 1.24'
+    pod 'Lock', '~> 1.26'
     pod 'SimpleKeychain'
+    pod 'Auth0', '~> 1.0.0-beta.7'
 end
 
 post_install do |installer|

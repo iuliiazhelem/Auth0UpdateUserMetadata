@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2239DCC01D5546B50009BB9A /* Auth0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2239DCBF1D5546B50009BB9A /* Auth0.plist */; };
 		22F14B981D303AF9009B687D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F14B971D303AF9009B687D /* AppDelegate.swift */; };
 		22F14B9A1D303AF9009B687D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F14B991D303AF9009B687D /* ViewController.swift */; };
 		22F14B9D1D303AFA009B687D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22F14B9B1D303AFA009B687D /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2239DCBF1D5546B50009BB9A /* Auth0.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Auth0.plist; sourceTree = "<group>"; };
 		22F14B941D303AF9009B687D /* AKSwiftAuth0Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AKSwiftAuth0Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22F14B971D303AF9009B687D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22F14B991D303AF9009B687D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 		22F14B961D303AF9009B687D /* AKSwiftAuth0Test */ = {
 			isa = PBXGroup;
 			children = (
+				2239DCBF1D5546B50009BB9A /* Auth0.plist */,
 				22F14B971D303AF9009B687D /* AppDelegate.swift */,
 				22F14B991D303AF9009B687D /* ViewController.swift */,
 				22F14B9B1D303AFA009B687D /* Main.storyboard */,
@@ -125,6 +128,7 @@
 				22F14BA21D303AFA009B687D /* LaunchScreen.storyboard in Resources */,
 				22F14B9F1D303AFA009B687D /* Assets.xcassets in Resources */,
 				22F14B9D1D303AFA009B687D /* Main.storyboard in Resources */,
+				2239DCC01D5546B50009BB9A /* Auth0.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
