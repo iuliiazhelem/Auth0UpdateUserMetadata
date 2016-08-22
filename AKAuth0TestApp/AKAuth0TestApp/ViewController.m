@@ -60,6 +60,7 @@ static NSString *kAuth0APIv2Token = @"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhd
 }
 
 - (IBAction)clickUpdateUserdataButton:(id)sender {
+    //we need to add Auth0 APIv2 token to header of responce
     NSString *token = [NSString stringWithFormat:@"Bearer %@", kAuth0APIv2Token];
     NSDictionary *headers = @{ @"content-type": @"application/json",
                                @"Authorization": token};
@@ -69,6 +70,8 @@ static NSString *kAuth0APIv2Token = @"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhd
         return;
     }
     
+    //create a new metadata dictionary
+    //if these items are exist they will be rewritten
     NSDictionary *body = @{ @"user_metadata" : @{
                             @"name": self.nameMetadataTextField.text,
                             @"country" : self.countryMetadataTextField.text
@@ -82,6 +85,8 @@ static NSString *kAuth0APIv2Token = @"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhd
     
     NSString *userId = [self.userId stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet alphanumericCharacterSet]];
     
+    //create PATCH request for creating/updating user metadata
+    //APIv2 https://auth0.com/docs/api/management/v2#!/Users/patch_users_by_id
     NSString *urlString = [NSString stringWithFormat:@"https://%@/api/v2/users/%@", [NSBundle mainBundle].infoDictionary[@"Auth0Domain"], userId];
     NSURL *url = [NSURL URLWithString:urlString];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url

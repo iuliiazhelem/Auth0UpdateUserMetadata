@@ -43,7 +43,10 @@ class ViewController: UIViewController {
     @IBAction func clickUpdateUserdataButton(sender: AnyObject) {
         //TODO: correct creation of UserPatchAttributes
         //let attributes = UserPatchAttributes().userMetadata(metadata: ["name": "\(self.nameMetadataTextField.text!)", "country": "\(self.countryMetadataTextField.text!)"])
+        
         let attributes = ["name": "\(self.nameMetadataTextField.text!)", "country": "\(self.countryMetadataTextField.text!)"]
+        //create PATCH request for creating/updating user metadata
+        //APIv2 https://auth0.com/docs/api/management/v2#!/Users/patch_users_by_id
         if let actualToken = self.tokenId, let actualUserId = self.userId {
             Auth0
                 .users(token: actualToken)
@@ -82,6 +85,7 @@ class ViewController: UIViewController {
         }
 
         let usermetadata = ["first_name": "support", "last_name" : "Auth0", "age" : "29"]
+        //signup with user metadata
         Auth0
             .authentication()
             .signUp(email: self.signupEnterEmailTextField.text!, username: nil, password: self.signupEnterPasswordTextField.text!, connection: "Username-Password-Authentication", userMetadata: usermetadata)
