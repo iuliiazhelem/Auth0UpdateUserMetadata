@@ -104,7 +104,7 @@ Please make sure that you change some keys in `Info.plist` with your Auth0 data 
 - Auth0ClientId
 - Auth0Domain
 - CFBundleURLSchemes
-
+```
 <key>CFBundleTypeRole</key>
 <string>None</string>
 <key>CFBundleURLName</key>
@@ -113,7 +113,7 @@ Please make sure that you change some keys in `Info.plist` with your Auth0 data 
 <array>
 <string>a0{CLIENT_ID}</string>
 </array>
-
+```
 For more information about user metadata please check the following links:
 - [User profile](https://auth0.com/docs/user-profile)
 - [Metadata in rules](https://auth0.com/docs/rules/metadata-in-rules)
