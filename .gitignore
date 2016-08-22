@@ -1,14 +1,11 @@
-# OS X
-.DS_Store
-
 # Auth0
 *.plist
 
 # Xcode
+.DS_Store
+*.xcodeproj
 build/
 *.pbxuser
-*.pbxproj
-*.xcodeproj
 !default.pbxuser
 *.mode1v3
 !default.mode1v3
