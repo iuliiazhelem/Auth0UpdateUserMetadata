@@ -2,9 +2,6 @@
 //  AppDelegate.swift
 //  AKSwiftAuth0Test
 //
-//  Created by Iuliia Zhelem on 08.07.16.
-//  Copyright © 2016 Akvelon. All rights reserved.
-//
 
 import UIKit
 import Lock
