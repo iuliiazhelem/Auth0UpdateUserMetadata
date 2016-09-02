@@ -2,10 +2,11 @@
 This sample exposes how to create and update user metadata.
 
 Auth0 allows you to store `metadata`, or data related to each user that has not come from the identity provider.
-NOTE: An authenticated user can modify data in their profile's `user_metadata`, but not in their `app_metadata`. For more details please see [this link](https://auth0.com/docs/metadata).
+
+* NOTE: An authenticated user can modify the data in their profile's `user_metadata`, but not in their `app_metadata`. For more details please see [this link](https://auth0.com/docs/metadata).
 
 ## Swift
-If you use Swift you can implement the creation and updating user metadata with [Auth0.swift Toolkit for Auth0 API](https://github.com/auth0/Auth0.swift).
+If you use Swift you can implement the creation and update of user metadata with [Auth0.swift Toolkit for Auth0 API](https://github.com/auth0/Auth0.swift).
 
 For this you need to add the following to your `Podfile`:
 ```
@@ -53,9 +54,9 @@ Auth0
 
 ## Objective-C
 For Objective-C you need to get Auth0 APIv2 token from this [link](https://auth0.com/docs/api/management/v2/tokens)
-with scope `update:users` and use it in code
+with the scope `update:users` and use it in code
 `static NSString *kAuth0APIv2Token = Your_APIv2_Token`
-For updating user metadata you need to make PATCH http request using [APIv2](https://auth0.com/docs/api/management/v2#!/Users/patch_users_by_id)
+For updating user metadata you need to make a PATCH http request using [APIv2](https://auth0.com/docs/api/management/v2#!/Users/patch_users_by_id)
 
 ### Important Snippets
 ####Update user metadata
@@ -100,7 +101,7 @@ NSURLSessionDataTask *dataTask = [session dataTaskWithRequest:request
 [dataTask resume];
 ```
 
-Please make sure that you change some keys in the `Info.plist` file with your Auth0 data from [Auth0 Dashboard](https://manage.auth0.com/#/applications):
+Please make sure that you change some keys in the `Info.plist` file with your Auth0 data from the [Auth0 Dashboard](https://manage.auth0.com/#/applications):
 - Auth0ClientId
 - Auth0Domain
 - CFBundleURLSchemes
