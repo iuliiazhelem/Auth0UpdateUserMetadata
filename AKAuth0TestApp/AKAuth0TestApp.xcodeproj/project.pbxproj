@@ -267,7 +267,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AKAuth0TestApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.akvelon.AKAuth0TestApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.auth0.AKAuth0TestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -278,7 +278,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AKAuth0TestApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.akvelon.AKAuth0TestApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.auth0.AKAuth0TestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

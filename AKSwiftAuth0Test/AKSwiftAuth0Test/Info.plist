@@ -31,7 +31,7 @@
 			<string>auth0</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>a01T8XeajR2FhDBAAz7JQ22mmzqCMoqzud</string>
+				<string>a0{CLIENT_ID}</string>
 			</array>
 		</dict>
 	</array>
